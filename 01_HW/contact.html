@@ -1,0 +1,65 @@
+<!-- 01_HW/contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+
+  <link rel="stylesheet" href="playlist.css" />
+
+
+  <link rel="stylesheet" href="contact.css" />
+</head>
+
+<body>
+  <h1>Contact</h1>
+
+  <table class="contact-table">
+    <thead>
+      <tr>
+        <th colspan="2" class="form-head">Send a Message</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td class="label">Name:</td>
+        <td><input type="text" id="name" /></td>
+      </tr>
+
+      <tr>
+        <td class="label">Email:</td>
+        <td><input type="email" id="email" /></td>
+      </tr>
+
+      <tr>
+        <td class="label">Phone:</td>
+        <td><input type="tel" id="phone" /></td>
+      </tr>
+
+      <tr>
+        <td class="label">Subject:</td>
+        <td><input type="text" id="subject" /></td>
+      </tr>
+
+      <tr>
+        <td class="label">Message:</td>
+        <td><textarea id="message" rows="5"></textarea></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><button id="sendBtn" class="contact-btn">Send Message</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    document.getElementById('sendBtn').addEventListener('click', function (e) {
+      e.preventDefault();
+      alert("DEBUG: your message was sent ✅");
+    });
+  </script>
+</body>
+</html>
