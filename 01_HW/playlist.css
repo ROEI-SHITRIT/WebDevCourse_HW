@@ -32,3 +32,15 @@ img {
     width: 120px;
     border-radius: 5px;
 }
+
+.brandbar {
+    background-color: #0078d7;  
+    color: white;               
+}
+
+.rowHighlight {
+    background-color: lightblue;  
+    color: #004f91;               
+    font-size: 18px;               
+    font-weight: bold;             
+}
